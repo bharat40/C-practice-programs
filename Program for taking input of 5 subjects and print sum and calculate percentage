@@ -1,0 +1,23 @@
+#include<stdio.h> // find total and calculate percentage
+int main()
+{
+    int s1, s2, s3, s4, s5;
+    printf("Enter marks of first subject = ");
+    scanf("%d",&s1);
+    printf("Enter marks of second subject = ");
+    scanf("%d",&s2);
+    printf("Enter marks of third subject = ");
+    scanf("%d",&s3);
+    printf("Enter marks of forth subject = ");
+    scanf("%d",&s4);
+    printf("Enter marks of fifth subject = ");
+    scanf("%d",&s5);
+    int sum = 0;
+    sum = sum + s1+s2+s3+s4+s5;
+    float p;
+    p = (sum/500.0)*100.0;
+    printf("total marks out of 500 = %d",sum);
+    printf("\nPercentage = %f%%",p);
+
+    return 0;
+}
